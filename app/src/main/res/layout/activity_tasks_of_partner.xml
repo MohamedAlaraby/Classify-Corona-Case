@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdentityActivity"
+    android:background="@color/purple_500"
+    >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Tasks_Activity_btn_Modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Modify Patient Info"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Ident_Activity_btn_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tasks_Activity_btn_Modify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Add New Patient"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/Ident_Activity_btn_Check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ident_Activity_btn_Add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Check Patient Case"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen"
+    android:background="@color/purple_500"
+    >
+<TextView
+    android:id="@+id/tv_signin"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:text="Sign in"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginTop="50dp"
+    android:textColor="@android:color/white"
+
+    />
+
+    <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="UserName"
+            android:layout_below="@id/tv_signin"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="15dp"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="7dp"
+            android:background="#30ffffff"
+            android:inputType="textPersonName"
+     />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_userName"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="15dp"
+        android:inputType="numberPassword"
+        android:background="#30ffffff"
+        android:textColorHint="@android:color/white"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="7dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="LOGIN"
+        android:textSize="22sp"
+
+        />
+    <TextView
+        android:id="@+id/tv_forgot_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:textSize="15sp"
+        android:layout_below="@+id/btn_login"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_or_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_forgot_pass"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Or Sign in with"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        />
+    <LinearLayout
+        android:id="@+id/social_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google_icon"
+        android:layout_margin="20dp"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook_icon"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter_icon"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

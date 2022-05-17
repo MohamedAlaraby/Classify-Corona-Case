@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientInfoActivity"
+    android:background="@color/purple_500"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Patient Information"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/patient_info_act_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="enter your name"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="15dp"
+        android:inputType="text"
+        android:background="#30ffffff"
+        android:textColorHint="@android:color/white"
+        />
+    <EditText
+    android:id="@+id/patient_info_act_et_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/patient_info_act_et_name"
+    android:layout_marginTop="20dp"
+    android:hint="enter your number"
+    android:textSize="15sp"
+    android:layout_marginHorizontal="15dp"
+    android:padding="15dp"
+    android:inputType="text"
+    android:background="#30ffffff"
+    android:textColorHint="@android:color/white"
+    />
+    <EditText
+        android:id="@+id/patient_info_act_et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_info_act_et_number"
+        android:layout_marginTop="20dp"
+        android:hint="enter your address"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="15dp"
+        android:inputType="text"
+        android:background="#30ffffff"
+        android:textColorHint="@android:color/white"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/patient_info_act_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient_info_act_et_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Save"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>
