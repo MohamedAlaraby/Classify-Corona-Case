@@ -8,34 +8,19 @@
     tools:context=".IdentityActivity"
     android:background="@color/purple_500"
     >
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/Ident_Activity_btn_new_Patient"
+        android:id="@+id/Ident_Activity_btn_old_Patient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="250dp"
         android:backgroundTint="@color/purple_200"
-        android:text="New Patient"
-        android:textAllCaps="false"
-        android:textSize="22sp" />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/Ident_Activity_btn_old_Patient"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Ident_Activity_btn_new_Patient"
-        android:layout_centerHorizontal="true"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/purple_200"
-        android:text="Old Patient"
+        android:text="Patient"
         android:textAllCaps="false"
         android:textSize="22sp"
         />
-
     <com.google.android.material.button.MaterialButton
-
         android:id="@+id/Ident_Activity_btn_admin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,6 +32,5 @@
         android:text="Partner"
         android:textAllCaps="false"
         android:textSize="22sp"
-
         />
 </RelativeLayout>
